@@ -22,65 +22,69 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.grpFloorType = New System.Windows.Forms.GroupBox()
+        Me.radTile = New System.Windows.Forms.Button()
+        Me.radCarpet = New System.Windows.Forms.Button()
+        Me.radHardwood = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'grpFloorType
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(200, 100)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
+        Me.grpFloorType.BackColor = System.Drawing.Color.White
+        Me.grpFloorType.Font = New System.Drawing.Font("Goudy Old Style", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.grpFloorType.Location = New System.Drawing.Point(0, 0)
+        Me.grpFloorType.Name = "grpFloorType"
+        Me.grpFloorType.Size = New System.Drawing.Size(175, 105)
+        Me.grpFloorType.TabIndex = 0
+        Me.grpFloorType.TabStop = False
+        Me.grpFloorType.Text = "Flooring Type"
         '
-        'Button1
+        'radTile
         '
-        Me.Button1.Location = New System.Drawing.Point(125, 115)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.radTile.BackColor = System.Drawing.Color.White
+        Me.radTile.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.radTile.Location = New System.Drawing.Point(125, 115)
+        Me.radTile.Name = "radTile"
+        Me.radTile.Size = New System.Drawing.Size(75, 23)
+        Me.radTile.TabIndex = 0
+        Me.radTile.Text = "Tile"
+        Me.radTile.UseVisualStyleBackColor = False
         '
-        'Button2
+        'radCarpet
         '
-        Me.Button2.Location = New System.Drawing.Point(70, 165)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.radCarpet.Location = New System.Drawing.Point(70, 165)
+        Me.radCarpet.Name = "radCarpet"
+        Me.radCarpet.Size = New System.Drawing.Size(75, 23)
+        Me.radCarpet.TabIndex = 1
+        Me.radCarpet.Text = "Carpet"
+        Me.radCarpet.UseVisualStyleBackColor = True
         '
-        'Button3
+        'radHardwood
         '
-        Me.Button3.Location = New System.Drawing.Point(183, 165)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.radHardwood.Location = New System.Drawing.Point(183, 165)
+        Me.radHardwood.Name = "radHardwood"
+        Me.radHardwood.Size = New System.Drawing.Size(75, 23)
+        Me.radHardwood.TabIndex = 2
+        Me.radHardwood.Text = "Hardwood"
+        Me.radHardwood.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(282, 253)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.radTile)
+        Me.Controls.Add(Me.radCarpet)
+        Me.Controls.Add(Me.radHardwood)
+        Me.Controls.Add(Me.grpFloorType)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents grpFloorType As GroupBox
+    Friend WithEvents radTile As Button
+    Friend WithEvents radCarpet As Button
+    Friend WithEvents radHardwood As Button
 End Class
