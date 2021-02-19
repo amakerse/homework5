@@ -209,16 +209,16 @@ Partial Class frmFlooring
         decCostEstimate = decFootage * decCostPerSquareFoot
         lblCostEstimate.Text = decCostEstimate.ToString("C")
 
-        Else
+
         MsgBox("You entered" & decFootage.ToString() & ". Enter a Positive Number",  , "Imput Error")
         txtFootage.Text = ""
         txtFootage.Focus()
-        End If
-        Else
+
+
         MsgBox("You entered" & decFootage.ToString() & ". Enter a Numeric Number",  , "Imput Error")
         txtFootage.Text = ""
         txtFootage.Focus()
-        End If
+
 
 
     End Sub
@@ -235,6 +235,18 @@ Partial Class frmFlooring
         radHardwood.Checked = False
         txtFootage.Focus()
         lblCostEstimate.Text = ""
+
+    End Sub
+
+    Private Sub lblSquareFeet_Click(sender As Object, e As EventArgs) Handles lblSquareFeet.Click
+
+    End Sub
+
+    Private Sub lblHeading_TextChanged(sender As Object, e As EventArgs) Handles lblHeading.TextChanged
+
+    End Sub
+
+    Private Sub txtFootage_TextChanged(sender As Object, e As EventArgs) Handles txtFootage.TextChanged
 
     End Sub
 End Class
