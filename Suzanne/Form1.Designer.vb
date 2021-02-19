@@ -1,4 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿'Suzanne Amaker
+' 02/18/2021
+'Homework 5
+
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmFlooring
     Inherits System.Windows.Forms.Form
 
